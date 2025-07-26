@@ -420,17 +420,26 @@ async def ytplaylist_to_txt(client: Client, message: Message):
     else:
         await message.reply_text("⚠️ **Unable to retrieve videos. Please check the URL.**")
 
-        
+
 # List users command
 @bot.on_message(filters.command("userlist") & filters.user(SUDO_USERS))
 async def list_users(client: Client, msg: Message):
     if SUDO_USERS:
-        users_list = "\n".join([f"User ID : `{user_id}`" for user_id in SUDO_USERS])
-        await msg.reply_text(f"SUDO_USERS :\n{users_list}")
+        sudo_list = "\n".join([f"• `{user_id}`" for user_id in SUDO_USERS])
     else:
-        await msg.reply_text("No sudo users.")
+        sudo_list = "No sudo users found."
 
+    if AUTH_CHANNELS:
+        auth_list = "\n".join([f"• `{channel_id}`" for channel_id in AUTH_CHANNELS])
+    else:
+        auth_list = "No auth channels found."
 
+    text = (
+        f"**🔑 SUDO USERS :**\n{sudo_list}\n\n"
+        f"**📢 AUTH CHANNELS :**\n{auth_list}"
+    )
+    await msg.reply_text(text)
+    
 # Help command
 @bot.on_message(filters.command("help"))
 async def help_command(client: Client, msg: Message):
