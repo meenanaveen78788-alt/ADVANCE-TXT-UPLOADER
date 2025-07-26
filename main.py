@@ -537,9 +537,9 @@ async def upload(bot: Client, m: Message):
     raw_text3 = input3.text
     await input3.delete(True)
     # Default credit message with link
-    credit = "️@Zindagii123 & @Aim_Aiims143"
+    credit = "️@Zindagii123 @Aim_Aiims143"
     if raw_text3 == '1':
-        CR = '@Zindagii123 & @Aim_Aiims143'
+        CR = '@Zindagii123 @Aim_Aiims143'
     elif raw_text3:
         try:
             text, link = raw_text3.split(',')
@@ -636,7 +636,7 @@ async def upload(bot: Client, m: Message):
             elif "/master.mpd" in url or "d1d34p8vz63oiq" in url or "sec1.pw.live" in url:
              id =  url.split("/")[-2]
              #url = f"https://anonymouspwplayer-b99f57957198.herokuapp.com/pw?url={url}?token={raw_text4}"
-             url = f"https://anonymousrajputplayer-9ab2f2730a02.herokuapp.com/pw?url={url}&token={raw_text4}"
+             url = f"https://anonymouspwplayerr-f996115ea61a.herokuapp.com/pw?url={url}&token={raw_text4}"
              #url = f"https://madxabhi-pw.onrender.com/{id}/master.m3u8?token={raw_text4}"
             #elif '/master.mpd' in url:
              #id =  url.split("/")[-2]
