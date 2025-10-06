@@ -1,4 +1,4 @@
-# Don't Remove Credit Tg - @naveen
+# Don't Remove Credit Tg - @naveen meena
 # Ask Doubt on telegram @naveen
 
 import os
