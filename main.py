@@ -1,5 +1,5 @@
-# Don't Remove Credit Tg - @Tushar0125
-# Ask Doubt on telegram @Tushar0125
+# Don't Remove Credit Tg - @naveen
+# Ask Doubt on telegram @naveen
 
 import os
 import re
@@ -52,12 +52,12 @@ async def show_random_emojis(message):
     return emoji_message
     
 # Define the owner's user ID
-OWNER_ID = 1571588943 # Replace with the actual owner's user ID
+OWNER_ID =5497861790  # Replace with the actual owner's user ID
 
 # List of sudo users (initially empty or pre-populated)
-SUDO_USERS = [1003575883,1571588943]
+SUDO_USERS = [ ]
 
-AUTH_CHANNEL = -1002566117512
+AUTH_CHANNEL = -
 
 # Function to check if a user is authorized
 def is_authorized(user_id: int) -> bool:
